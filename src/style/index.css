@@ -1,0 +1,31 @@
+body{
+    background: linear-gradient(to right, #4da0b0, #d39d38);
+}
+
+.maincontainer
+{
+    text-align: center;
+}
+
+.secondcontainer
+{
+    background-color: rgba(16, 17, 17, 0.363);
+    padding: 50px;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.inputs
+{
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+.button
+{
+    color: white;
+    padding: 5px 40px;
+    background: black;
+    border-radius: 5px;
+    font-size: 20px;
+}

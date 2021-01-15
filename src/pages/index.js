@@ -1,6 +1,7 @@
 import React from "react"
 import { useQuery, useMutation } from "@apollo/client"
 import gql from "graphql-tag"
+import "../style/index.css"
 
 const BookMarksQuery = gql`
   {
@@ -41,19 +42,20 @@ export default function Home() {
   }
 
   return (
-    <div>
+    <div className="maincontainer">
       <h1> Thanwar Bookmarking App </h1>
       <br />
       <p>{JSON.stringify(data)}</p>
       <br />
       <br />
 
-      <div>
-        <input type="text" placeholder="URL"         ref={node => (textfield = node)} />
+      <div className="secondcontainer">
+        <h1>Add Bookmarks</h1>
+        <input className="inputs" type="text" placeholder="URL"         ref={node => (textfield = node)} />
       <br />
-        <input type="text" placeholder="Description" ref={node => (desc = node)} />
+        <input className="inputs" type="text" placeholder="Description" ref={node => (desc = node)} />
       <br />
-        <button onClick={addBookmarkSubmit}>Bookmark</button>
+        <button className="button" onClick={addBookmarkSubmit}>Bookmark</button>
       <br />
       </div>
     </div>
