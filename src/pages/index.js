@@ -13,7 +13,7 @@ export default function Home() {
 
   return(
     <div>
-    <h1> Hello Bookmarker! </h1>
+    <h1> Hello Bookmarker App </h1>
     <br />
     <p>{JSON.stringify(data)}</p>
     </div>
