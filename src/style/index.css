@@ -1,31 +1,59 @@
-body{
-    background: linear-gradient(to right, #4da0b0, #d39d38);
+body {
+  background: linear-gradient(to right, #4da0b0, #d39d38);
 }
 
-.maincontainer
-{
-    text-align: center;
+.mainheading {
+  text-align: center;
 }
 
-.secondcontainer
-{
-    background-color: rgba(16, 17, 17, 0.363);
-    padding: 50px;
-    width: 250px;
-    margin: 0 auto;
+.boxcontainer {
+  background-color: rgba(16, 17, 17, 0.363);
+  padding: 20px;
+  width: 800px;
+  margin: 0 auto;
 }
 
-.inputs
-{
-    margin: 10px;
-    padding: 10px 20px;
+.box {
+  border: solid 5px white;
+  padding: 50px 50px;
+  text-align: center;
+  margin: 0 auto;
+  width: 400px;
 }
 
-.button
-{
-    color: white;
-    padding: 5px 40px;
-    background: black;
-    border-radius: 5px;
-    font-size: 20px;
+.inputs {
+  margin: 10px;
+  padding: 10px 20px;
+}
+
+.button {
+  color: white;
+  padding: 5px 40px;
+  background: black;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.link {
+    color: aliceblue;
+    margin-left: 50px;
+}
+
+.desc {
+  
+}
+
+@media only screen and (max-width: 600px) {
+  .boxcontainer {
+    width: 300px;
+  }
+
+  .box {
+    width: 150px;
+  }
+
+  .inputs {
+    font-size: 9px;
+  }
+  
 }
