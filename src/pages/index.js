@@ -45,7 +45,13 @@ export default function Home() {
     <div className="maincontainer">
       <h1> Thanwar Bookmarking App </h1>
       <br />
-      <p>{JSON.stringify(data)}</p>
+      {/* <p>{JSON.stringify(data)}</p> */}
+      <ul>{data && data.bookmark.map(mark =>(
+        <li  key={mark.id}>
+          {mark.url} {"  |  "} {mark.desc}
+        </li>
+      ))}</ul>
+      
       <br />
       <br />
 
